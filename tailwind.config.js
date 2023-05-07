@@ -6,8 +6,14 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ], 
   theme: {
+    colors: {
+      naranja: '#FF0007',
+      amarillo: '#F2E529',
+      violeta: '#270E40'
+    },
     extend: {
       fontFamily : {
+        'ubuntu': ['var(--font-ubuntu)'],
         'Pinot': ['pinot-grigio-modern', 'sans-serif']
       },
       backgroundImage: {
@@ -15,6 +21,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      
     },
   },
   plugins: [],
